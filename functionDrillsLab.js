@@ -270,14 +270,15 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
-function theEliminator (contestants,loser) {
+function theEliminator (contestants, loser) {
 for (let i = 0; i < contestants.length; i++) {
   if (contestants[i] === loser) {
-    contestants.splice(contestants[i], 1);
+    theFallen = contestants.splice(i, 1);
+    console.log(contestants);
     }
   }
 }
-console.log(theEliminator(contestants,loser))
+(theEliminator(contestants,loser))
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -291,7 +292,7 @@ function string (input) {
   let upperInput = input.toUpperCase()
   console.log(upperInput)
 }
-// string("yeet");
+// string(sampleString);
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -323,7 +324,7 @@ function frogCheck (gold) {
 console.log(gold / 3)
 }
 
-let totalFrogs = frogCheck(11);
+// let totalFrogs = frogCheck(11);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -336,7 +337,7 @@ function frogCheck (gold) {
   console.log(Math.floor(gold));
   }
   
-  let totalFrogs2 = frogCheck(11);
+  // let totalFrogs2 = frogCheck(11);
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,,5,6,8,9]
@@ -355,8 +356,8 @@ for (let i = 0; i < array.length - 1; i++) {
 return true
 }
 
-let arrayIsAscending = isAscending(sampleArray);
-console.log(arrayIsAscending)
+// let arrayIsAscending = isAscending(sampleArray);
+// console.log(arrayIsAscending)
 
 ////////////////// PROBLEM 22 ////////////////////
 
